@@ -120,8 +120,8 @@ const translations: Record<Locale, Translations> = {
         },
         hero: {
             badge: "Conseil Cloud & Data",
-            headline1: "AR-KAM : Élever ",
-            headline2: "vos Données vers de Nouveaux Sommets.",
+            headline1: "AR-KAM : Propulsez",
+            headline2: "vos données au sommet",
             sub: "Cabinet de conseil spécialisé en Cloud & DevOps, axé sur l'industrialisation et l'automatisation intelligente des processus d'entreprise.",
             cta1: "Découvrir nos Services",
             cta2: "Nous Contacter",
