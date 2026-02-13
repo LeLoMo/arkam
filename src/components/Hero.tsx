@@ -32,18 +32,7 @@ export default function Hero() {
 
             {/* Content */}
             <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-                {/* Badge */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-royal/5 border border-royal/10 mb-8"
-                >
-                    <span className="w-2 h-2 rounded-full bg-neon animate-pulse" />
-                    <span className="text-sm font-medium text-royal">
-                        {t.hero.badge}
-                    </span>
-                </motion.div>
+
 
                 {/* Headline */}
                 <motion.h1
@@ -64,7 +53,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.3 }}
-                    className="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-slate-500 leading-relaxed"
+                    className="mt-6 max-w-2xl mx-auto text-xl sm:text-2xl text-slate-500 leading-relaxed"
                 >
                     {t.hero.sub}
                 </motion.p>

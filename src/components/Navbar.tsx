@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
@@ -60,16 +59,12 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <a href="#home" className="flex items-center gap-3 group">
-                    <div className="relative w-12 h-12 rounded-xl overflow-hidden glow-box group-hover:glow-box-hover transition-shadow duration-300">
-                        <Image
-                            src="/logo.jpg"
-                            alt="AR-KAM Logo"
-                            fill
-                            className="object-contain bg-white p-1"
-                            priority
-                        />
-                    </div>
-                    <span className="font-[var(--font-heading)] text-xl font-bold text-royal-dark tracking-tight">
+                    <img
+                        src="/logo.png"
+                        alt="AR-KAM Logo"
+                        className="w-20 h-20 object-contain"
+                    />
+                    <span className="text-3xl font-bold text-royal-dark tracking-tight" style={{ fontFamily: "'Open Sans', sans-serif" }}>
                         AR-KAM
                     </span>
                 </a>

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useI18n } from "@/lib/i18n";
 
 function LinkedInIcon({ className }: { className?: string }) {
@@ -49,15 +48,12 @@ export default function Footer() {
                         transition={{ duration: 0.5 }}
                         className="flex items-center gap-3 group"
                     >
-                        <div className="relative w-10 h-10 rounded-xl overflow-hidden glow-box group-hover:glow-box-hover transition-shadow duration-300">
-                            <Image
-                                src="/logo.jpg"
-                                alt="AR-KAM Logo"
-                                fill
-                                className="object-contain bg-white p-1"
-                            />
-                        </div>
-                        <span className="font-[var(--font-heading)] text-lg font-bold text-royal-dark tracking-tight">
+                        <img
+                            src="/logo.png"
+                            alt="AR-KAM Logo"
+                            className="w-16 h-16 object-contain"
+                        />
+                        <span className="text-2xl font-bold text-royal-dark tracking-tight" style={{ fontFamily: "'Open Sans', sans-serif" }}>
                             AR-KAM
                         </span>
                     </motion.a>
