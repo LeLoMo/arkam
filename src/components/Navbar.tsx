@@ -58,15 +58,12 @@ export default function Navbar() {
         >
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
-                <a href="#home" className="flex items-center gap-3 group">
+                <a href="#home" className="flex items-center group">
                     <img
                         src="/logo.png"
                         alt="AR-KAM Logo"
-                        className="w-20 h-20 object-contain"
+                        className="w-20 h-20 md:w-28 md:h-28 object-contain"
                     />
-                    <span className="text-3xl font-bold text-royal-dark tracking-tight" style={{ fontFamily: "'Open Sans', sans-serif" }}>
-                        AR-KAM
-                    </span>
                 </a>
 
                 {/* Desktop Nav */}
